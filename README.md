@@ -3,18 +3,12 @@
 GlobeSumm: A Challenging Benchmark Towards Unifying Multi-lingual, Cross-lingual and Multi-document News Summarization (EMNLP 2024)
 
 
-
-### Why we constructed "GlobeSumm"?
-
----
+## Why we constructed "GlobeSumm"?
 
 Events involved with armed conflicts, international relations, and political elections have always fascinated people worldwide. However, relying solely on news articles in a single language to gain an in-depth understanding of such events can be limiting. This is because news reports from different countries are often influenced by their national standpoints and cultural biases, resulting in potential distortions. To obtain a more comprehensive insight into these events, it is crucial to explore news articles from various countries and languages, allowing us to consider diverse perspectives and access more objective information. To this end, we constructed **GlobeSumm**.
 
 
-
-### What can you do with "GlobeSumm" / get from "GlobeSumm"?
-
----
+## What can you do with "GlobeSumm" / get from "GlobeSumm"?
 
 Though "GlobeSumm" is a multilingual news summarization dataset, many of the intermediate processes involved in constructing it can also be applied to various other tasks.
 
@@ -26,6 +20,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 ```python
 # data structure
+
 { # Event1
   "date": 20230501,
   "description": "a Cessna 206 light aircraft with seven people on board crashed in the jungle in the Caquetá Department of Colombia.",
@@ -50,12 +45,16 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 2. **News relevance determination data**
 
-- In the process of transforming unstructured news into event-centric form, we first employ an event retrieval method to gather a collection of news articles related to the given description. The retrieved news articles in different languages are expected to be highly relevant to the provided description, but high relevance does not necessarily mean they all describe the same news event. Therefore, we include a post-retrieval manual verification process.
+- In the process of transforming unstructured news into event-centric form, we employ an event retrieval method to gather a collection of news articles related to the given news description.
+- The retrieved news articles in different languages are expected to be highly relevant to the provided description, but high relevance does not necessarily mean they all describe the same news event.
+- Therefore, we include a post-retrieval manual verification process.
 - These manually annotated data, which involves 2104 events with 26301 news articles, are also available. 
 
 ```python
 # data structure
-# Basically the same as mentioned in "1". But for each news report, except that there is one more key "label_relevant", which equals 1 if the news report is relevant to the given "description", 0 otherwise.
+# For each news report, except that there is one more key "label_relevant".
+# "label_relevant" equals 1 if the news report is relevant to the given "description", 0 otherwise.
+
 { # event1
   "date": 20230501,
   "description": "a Cessna 206 light aircraft with seven people on board crashed in the jungle in the Caquetá Department of Colombia.",
@@ -65,16 +64,16 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
       "lang_abbr": "fr", "lang_full": "French", "date": "20230517",
       "title": "XXX",
       "article": "XXX",
-      <span style="color:red">"label_relevant": 1</span>
+      "label_relevant": 1
     },
     # news2
     # news3
     ...
   ]
 }
-{ # event2
- ...
-}
+# Event2
+# Event3
+...
 ```
 
 
@@ -102,6 +101,8 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 
 ```python
+# data structure
+
 { # event1
   "date": 20230501,
   "description": "a Cessna 206 light aircraft with seven people on board crashed in the jungle in the Caquetá Department of Colombia.",
@@ -111,28 +112,28 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
       "lang_abbr": "fr", "lang_full": "French", "date": "20230517",
       "title": "XXX",
       "article": "XXX",
- 			"KIS": ,
- 			"KIS+CLP": 
+      "KIS": ,
+      "KIS+CLP": 
     },
     # news2
     # news3
     ...
   ],
-	# silver quality summary generation with GPT-4 under Chronological Recurrent Summarization schema
-	"GPT4": [
-    {	
+  # silver quality summary generation with GPT-4 under "Chronological Recurrent Summarization" schema (Section 2.3 in our paper)
+  "GPT4": [
+    { 
       "news1": "",
-    	"news2": "",
-    	"where": "",
-    	"strategy": "",
-    	"summary": "",
-    	"summary_KIS": "",
+      "news2": "",
+      "where": "",
+      "strategy": "",
+      "summary": "",
+      "summary_KIS": "",
     },
     ...
   ]
 }
-{ # event2
- ...
-}
+# Event2
+# Event3
+...
 ```
 
