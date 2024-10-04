@@ -16,11 +16,11 @@ Events involved with armed conflicts, international relations, and political ele
 
 ---
 
-- Though "GlobeSumm" is a multilingual news summarization dataset, many of the intermediate processes involved in constructing it can also be applied to various other tasks.
+Though "GlobeSumm" is a multilingual news summarization dataset, many of the intermediate processes involved in constructing it can also be applied to various other tasks.
 
 1. **Event-centric multilingual news reports**
 
-- A total of 370 news events, consisting of 4687 news articles, have been finally retained in GlobeSumm. The entire dataset spans 26 languages and each news event is associated with a minimum of 10 news reports in different languages.
+A total of 370 news events, consisting of 4687 news articles, have been finally retained in GlobeSumm. The entire dataset spans 26 languages and each news event is associated with a minimum of 10 news reports in different languages.
 
 ```json
 { # event1
@@ -31,7 +31,7 @@ Events involved with armed conflicts, international relations, and political ele
     { # news1
       "lang_abbr": "fr", "lang_full": "French", "date": "20230517",
       "title": "XXX",
-      "article": "XXX"
+      "article": "XXX",
     },
     # news2
     # news3
@@ -60,7 +60,7 @@ Events involved with armed conflicts, international relations, and political ele
       "lang_abbr": "fr", "lang_full": "French", "date": "20230517",
       "title": "XXX",
       "article": "XXX",
- 			"label_relevant": 1
+      "label_relevant": 1
     },
     # news2
     # news3
