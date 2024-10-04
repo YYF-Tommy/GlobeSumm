@@ -20,10 +20,13 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 1. **Event-centric multilingual news reports**
 
-- A total of 370 news events, consisting of 4687 news articles, have been finally retained in GlobeSumm. The entire dataset spans 26 languages and each news event is associated with a minimum of 10 news reports in different languages.
+- A total of 370 news events, consisting of 4687 news articles, have been finally retained in GlobeSumm.
+- The entire dataset spans 26 languages.
+- Each news event is associated with a minimum of 10 news reports in different languages.
 
 ```python
-{
+# data structure
+{ # Event1
   "date": 20230501,
   "description": "a Cessna 206 light aircraft with seven people on board crashed in the jungle in the Caquetá Department of Colombia.",
   "category": "Disasters and accidents",
@@ -37,17 +40,22 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
     # news3
     ...
   ]
-}
+},
+# Event2
+# Event3
+...
 ```
 
 
 
 2. **News relevance determination data**
 
-- In the process of transforming unstructured news into event-centric form, we first employ an event retrieval method to gather a collection of news articles related to the given description. The retrieved news articles in different languages are expected to be highly relevant to the provided description, but high relevance does not necessarily mean they all describe the same news event. Therefore, we include a post-retrieval manual verification process. These manually annotated data, which involves 2104 events with 26301 news articles, are also available. 
+- In the process of transforming unstructured news into event-centric form, we first employ an event retrieval method to gather a collection of news articles related to the given description. The retrieved news articles in different languages are expected to be highly relevant to the provided description, but high relevance does not necessarily mean they all describe the same news event. Therefore, we include a post-retrieval manual verification process.
+- These manually annotated data, which involves 2104 events with 26301 news articles, are also available. 
 
-```json
-# The data format is basically the same as mentioned in "1". But for each news report, except that there is one more key "label_relevant", which equals 1 if the news report is relevant to the given "description", 0 otherwise.
+```python
+# data structure
+# Basically the same as mentioned in "1". But for each news report, except that there is one more key "label_relevant", which equals 1 if the news report is relevant to the given "description", 0 otherwise.
 { # event1
   "date": 20230501,
   "description": "a Cessna 206 light aircraft with seven people on board crashed in the jungle in the Caquetá Department of Colombia.",
@@ -57,7 +65,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
       "lang_abbr": "fr", "lang_full": "French", "date": "20230517",
       "title": "XXX",
       "article": "XXX",
-      "label_relevant": 1
+      <span style="color:red">"label_relevant": 1</span>
     },
     # news2
     # news3
@@ -93,7 +101,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 
 
-```json
+```python
 { # event1
   "date": 20230501,
   "description": "a Cessna 206 light aircraft with seven people on board crashed in the jungle in the Caquetá Department of Colombia.",
