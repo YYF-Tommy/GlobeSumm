@@ -20,10 +20,10 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 1. **Event-centric multilingual news reports**
 
-A total of 370 news events, consisting of 4687 news articles, have been finally retained in GlobeSumm. The entire dataset spans 26 languages and each news event is associated with a minimum of 10 news reports in different languages.
+- A total of 370 news events, consisting of 4687 news articles, have been finally retained in GlobeSumm. The entire dataset spans 26 languages and each news event is associated with a minimum of 10 news reports in different languages.
 
-```json
-{ # event1
+```python
+{
   "date": 20230501,
   "description": "a Cessna 206 light aircraft with seven people on board crashed in the jungle in the Caquetá Department of Colombia.",
   "category": "Disasters and accidents",
@@ -37,9 +37,6 @@ A total of 370 news events, consisting of 4687 news articles, have been finally 
     # news3
     ...
   ]
-}
-{ # event2
- ...
 }
 ```
 
