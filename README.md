@@ -24,7 +24,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 - The entire dataset spans 26 languages.
 - Each news event is associated with a minimum of 10 news reports in different languages.
 
-## [Event-centric Multilingual News Reports](https://www.alipan.com/s/LqXfhEvAUng)
+## [Event-centric Multilingual News Reports](https://www.alipan.com/s/LqXfhEvAUng) <img src="figures/tap.png" style="width:35px; height:35px;"> 
 
 ```python
 # data structure
@@ -58,7 +58,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 - Therefore, we include a post-retrieval manual verification process.
 - These manually annotated data, which involves 2104 events with 26301 news articles, are also available. 
 
-## [Relevance Determination](https://www.alipan.com/s/r63AQgZ9r3m)
+## [Relevance Determination](https://www.alipan.com/s/r63AQgZ9r3m) <img src="figures/tap.png" style="width:35px; height:35px;">
 
 ```python
 # data structure
@@ -112,7 +112,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
   - Based on our manual observation of diverse news articles across multiple languages and documents, we have concluded three primary hurdles in MCMS: *redundancies*, *omissions*, and *conflicts*. The details shown in Figure, which constitute our protocol, will be incorporated as part of the prompt to assist the LLMs in more effectively identifying and handling these hurdles while summarizing the documents.
 
-## [GlobeSumm](https://www.alipan.com/s/XRFPqBvNjNk)
+## [GlobeSumm](https://www.alipan.com/s/XRFPqBvNjNk) <img src="figures/tap.png" style="width:35px; height:35px;">
 
 ```python
 # data structure
