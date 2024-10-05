@@ -1,15 +1,15 @@
 # GlobeSumm
 
-<img src="figures/language.png" style="width:20px; height:20px;"> GlobeSumm: A Challenging Benchmark Towards Unifying Multi-lingual, Cross-lingual and Multi-document News Summarization (EMNLP 2024)
+<img src="figures/language.png" style="width:30px; height:30px;"> GlobeSumm: A Challenging Benchmark Towards Unifying Multi-lingual, Cross-lingual and Multi-document News Summarization (EMNLP 2024)
 
 
 
 
 ## Why we constructed "GlobeSumm"?
 
-<iframe>
-  <img src="figures/protocol.pdf" width="750px" >
-</iframe>
+<p align="center">
+  <img src="figures/protocol.png" width="750px" >
+</p>
 
 Events involved with armed conflicts, international relations, and political elections have always fascinated people worldwide. However, relying solely on news articles in a single language to gain an in-depth understanding of such events can be limiting. This is because news reports from different countries are often influenced by their national standpoints and cultural biases, resulting in potential distortions. To obtain a more comprehensive insight into these events, it is crucial to explore news articles from various countries and languages, allowing us to consider diverse perspectives and access more objective information. To this end, we constructed **GlobeSumm**.
 
@@ -93,6 +93,10 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 - Chronological Recurrent Summarization (CRS)
 
   - Our summary annotation approach is conducted under the CRS schema, aiming to distill key infor- mation from news articles in chronological order. Specifically, we begin by organizing these news documents in order of their respective timestamps. Then the summarization process is initiated by generating a concise summary for the first two articles. The obtained summary is then integrated with the subsequent article, and iteratively throughout the whole document set.
+
+<p align="center">
+  <img src="figures/pipeline.png" width="750">
+</p>
 
 - 3.1 Key Information Split (KIS)
 
