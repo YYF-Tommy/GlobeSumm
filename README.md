@@ -92,7 +92,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 - Chronological Recurrent Summarization (CRS)
 
-  - Our summary annotation approach is conducted under the CRS schema, aiming to distill key infor- mation from news articles in chronological order. Specifically, we begin by organizing these news documents in order of their respective timestamps. Then the summarization process is initiated by generating a concise summary for the first two articles. The obtained summary is then integrated with the subsequent article, and iteratively throughout the whole document set.
+  - Our summary annotation approach is conducted under the CRS schema, aiming to distill key information from news articles in chronological order. Specifically, we begin by organizing these news documents in order of their respective timestamps. Then the summarization process is initiated by generating a concise summary for the first two articles. The obtained summary is then integrated with the subsequent article, and iteratively throughout the whole document set.
 
 <p align="center">
   <img src="figures/pipeline.png" width="750">
@@ -100,17 +100,17 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 - 3.1 Key Information Split (KIS)
 
-  - Reduce the length of input by organizing key information from each document into several finely-grained sentences before sum- marizing the whole document set.
+  - Reduce the length of input by organizing key information from each document into several finely-grained sentences before summarizing the whole document set.
 
 - 3.2 Cross-lingual Prompting (CLP)
 
   - To effectively capture the alignment from
 
-    various input languages to target language, we em- ploy cross-lingual alignment prompting method, which was first introduced in Qin et al. (2023).
+    various input languages to target language, we employ cross-lingual alignment prompting method, which was first introduced in [Qin et al. (2023)](https://arxiv.org/pdf/2310.14799).
 
 - 3.3 Protocol-guided Prompting (PGP)
 
-  - Based on our manual observation of diverse news articles across multiple languages and documents, we have concluded three primary hurdles in MCMS: *redundancies*, *omissions*, and *con- flicts*. The details shown in Figure, which constitute our protocol, will be incorporated as part of the prompt to assist the LLMs in more effectively identifying and handling these hurdles while summarizing the documents.
+  - Based on our manual observation of diverse news articles across multiple languages and documents, we have concluded three primary hurdles in MCMS: *redundancies*, *omissions*, and *conflicts*. The details shown in Figure, which constitute our protocol, will be incorporated as part of the prompt to assist the LLMs in more effectively identifying and handling these hurdles while summarizing the documents.
 
 ## [GlobeSumm](https://www.alipan.com/s/XRFPqBvNjNk)
 
