@@ -1,9 +1,15 @@
 # GlobeSumm
 
-GlobeSumm: A Challenging Benchmark Towards Unifying Multi-lingual, Cross-lingual and Multi-document News Summarization (EMNLP 2024)
+<img src="figures/language.png" style="width:20px; height:20px;"> GlobeSumm: A Challenging Benchmark Towards Unifying Multi-lingual, Cross-lingual and Multi-document News Summarization (EMNLP 2024)
+
+
 
 
 ## Why we constructed "GlobeSumm"?
+
+<iframe>
+  <img src="figures/protocol.pdf" width="750px" >
+</iframe>
 
 Events involved with armed conflicts, international relations, and political elections have always fascinated people worldwide. However, relying solely on news articles in a single language to gain an in-depth understanding of such events can be limiting. This is because news reports from different countries are often influenced by their national standpoints and cultural biases, resulting in potential distortions. To obtain a more comprehensive insight into these events, it is crucial to explore news articles from various countries and languages, allowing us to consider diverse perspectives and access more objective information. To this end, we constructed **GlobeSumm**.
 
