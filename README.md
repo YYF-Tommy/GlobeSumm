@@ -3,10 +3,6 @@
 <img src="figures/language.png" style="width:30px; height:30px;"> GlobeSumm: A Challenging Benchmark Towards Unifying Multi-lingual, Cross-lingual and Multi-document News Summarization (EMNLP 2024)
 
 
-## Available Data
-
-
-
 ## Why we constructed "GlobeSumm"?
 
 <p align="center">
