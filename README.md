@@ -108,9 +108,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 - 3.2 Cross-lingual Prompting (CLP)
 
-  - To effectively capture the alignment from
-
-    various input languages to target language, we employ cross-lingual alignment prompting method, which was first introduced in [Qin et al. (2023)](https://arxiv.org/pdf/2310.14799).
+  - To effectively capture the alignment from various input languages to target language, we employ cross-lingual alignment prompting method, which was first introduced in [Qin et al. (2023)](https://arxiv.org/pdf/2310.14799).
 
 - 3.3 Protocol-guided Prompting (PGP)
 
