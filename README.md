@@ -2,6 +2,7 @@
 
 <img src="figures/language.png" style="width:30px; height:30px;"> GlobeSumm: A Challenging Benchmark Towards Unifying Multi-lingual, Cross-lingual and Multi-document News Summarization (EMNLP 2024)
 
+The GlobeSumm dataset can be found at: [HuggingFace](https://huggingface.co/datasets/TommyYe/GlobeSumm)
 
 ## Why we constructed "GlobeSumm"?
 
@@ -18,7 +19,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 ### 1. **Event-centric multilingual news reports**
 
-(download link) [Event-centric Multilingual News Reports <img src="figures/tap.png" style="width:20px; height:20px;">](https://www.alipan.com/s/LqXfhEvAUng)
+(download link) [Alipan <img src="figures/tap.png" style="width:20px; height:20px;">](https://www.alipan.com/s/LqXfhEvAUng) or [HuggingFace <img src="figures/tap.png" style="width:20px; height:20px;">](https://huggingface.co/datasets/TommyYe/GlobeSumm)
 
 - A total of 370 news events, consisting of 4687 news articles, have been finally retained in GlobeSumm.
 - The entire dataset spans 26 languages.
@@ -53,7 +54,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 ### 2. **News relevance determination data**
 
-(download link) [Relevance Determination <img src="figures/tap.png" style="width:20px; height:20px;">](https://www.alipan.com/s/r63AQgZ9r3m)
+(download link) [Alipan <img src="figures/tap.png" style="width:20px; height:20px;">](https://www.alipan.com/s/r63AQgZ9r3m) or [HuggingFace <img src="figures/tap.png" style="width:20px; height:20px;">](https://huggingface.co/datasets/TommyYe/GlobeSumm)
 
 - In the process of transforming unstructured news into event-centric form, we employ an event retrieval method to gather a collection of news articles related to the given news description.
 - The retrieved news articles in different languages are expected to be highly relevant to the provided description, but high relevance does not necessarily mean they all describe the same news event.
@@ -92,7 +93,7 @@ Though "GlobeSumm" is a multilingual news summarization dataset, many of the int
 
 ### 3. Global News Summarization
 
-(download link) [GlobeSumm <img src="figures/tap.png" style="width:20px; height:20px;">](https://www.alipan.com/s/XRFPqBvNjNk)
+(download link) [Alipan <img src="figures/tap.png" style="width:20px; height:20px;">](https://www.alipan.com/s/XRFPqBvNjNk) or [HuggingFace <img src="figures/tap.png" style="width:20px; height:20px;">](https://huggingface.co/datasets/TommyYe/GlobeSumm)
 
 - Chronological Recurrent Summarization (CRS)
 
